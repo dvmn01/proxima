@@ -1,0 +1,89 @@
+<html>
+<head> 
+	<title>SEVENTEEN</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body> 
+	<div class="main">
+		<nav>
+			<div class ="logo">
+				<img src=".\17logo.jpg">
+			</div>
+			<div class = "nav-links">
+			 <ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Weverse</a></li>
+				<li><a href="#">Socials</a></li>
+			</ul>
+		</div>
+		
+		</nav>
+		
+			<div class="information">
+			<div class="overlay"></div>
+			<img src=".\sebong.jpg" class="sebong">
+			<div id="circle">
+				<div class="feature one">
+					<img src=".\user.png">
+					<div>
+					<h1>Members</h1>
+					<p>Get to know the 13 members of the group!</p>
+				</div>
+				</div>
+			<div class="feature two">
+			<img src=".\musicdisc.png">
+			<div>
+				<h1>Discography</h1>
+				<p> Listen and enjoy their masterpieces!</p>
+			</div>
+			</div>
+			<div class="feature three">
+			<img src=".\image-gallery.png">
+			<div>
+				<h1>Gallery</h1>
+				<p>See more of the boys!</p>
+			</div>
+			</div>
+			<div class="feature four">
+			<img src=".\television.png">
+			<div>
+				<h1>Going Seventeen</h1>
+				<p>Watch the best variety show of all time!</p>
+			</div>
+			</div>
+			
+		</div>
+		</div>
+		
+		<div class="controls">
+		<img src=".\arrow.png" id="upbtn">
+		<h3>SVT</h3>
+		<img src=".\arrow.png" id="downbtn">
+		
+		</div>
+		
+		<script>
+		var circle = document.getElementById("circle");
+		var upbtn = document.getElementById("upbtn");
+		var downbtn = document.getElementById("downbtn");
+		
+		var rotateValue = circle.style.transform;
+		var rotateSum;
+		
+		upbtn.onclick = function(){
+		rotateSum = rotateValue + "rotate(-90deg)";
+		circle.style.transform = rotateSum;
+		rotateValue = rotateSum;
+		
+		}
+		downbtn.onclick = function(){
+		rotateSum = rotateValue + "rotate(90deg)";
+		circle.style.transform = rotateSum;
+		rotateValue = rotateSum;
+		}
+		
+		</script>
+</body>
+</html>
